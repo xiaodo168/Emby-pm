@@ -175,14 +175,14 @@ proxy-groups:
 # ℳ谨兮规则合集
 rule-providers: 
  # 国内
-  private-direct:          {<<: *ClassicalText, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/917963ccd65d699b53c4514a073f1377/raw/direct-domain.list}
-  ip-domain:               {<<: *ClassicalText, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/917963ccd65d699b53c4514a073f1377/raw/ip-domain.list}
-  emby:                    {<<: *ClassicalText, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/32ab6e503b8556c64ceefe4c00cf30cc/raw/emby.list}
-  location_ip:             {<<: *ClassicalYaml, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/32ab6e503b8556c64ceefe4c00cf30cc/raw/location_ip.yaml}
-  XPTV:                    {<<: *ClassicalYaml, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/32ab6e503b8556c64ceefe4c00cf30cc/raw/xptv.yaml}
-  fix-direct:              {<<: *ClassicalYaml, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/32ab6e503b8556c64ceefe4c00cf30cc/raw/fix-direct.yaml}
+  private-direct:          {<<: *ClassicalText, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/direct-domain.list}
+  ip-domain:               {<<: *ClassicalText, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/ip-domain.list}
+  emby:                    {<<: *ClassicalText, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/emby.list}
+  location_ip:             {<<: *ClassicalYaml, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/location_ip.yaml}
+  XPTV:                    {<<: *ClassicalYaml, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/xptv.yaml}
+  fix-direct:              {<<: *ClassicalYaml, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/fix-direct.yaml}
  # 国外
-  private-proxy:           {<<: *ClassicalText, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/917963ccd65d699b53c4514a073f1377/raw/proxy-domain.list}
+  private-proxy:           {<<: *ClassicalText, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/proxy-domain.list}
   telegram:                {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/telegram.mrs}
   twitter:                 {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/twitter.mrs}
   github:                  {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/github.mrs}
@@ -197,9 +197,9 @@ rule-providers:
   youtube:                 {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/youtube.mrs}
   netflix:                 {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/netflix.mrs}
 # 不常用APP
+  speedtest:               {<<: *ClassicalYaml, url: https://raw.githubusercontent.com/xiaodo168/Rule/main/rules/speedtest.yaml}
   openai:                  {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/openai.mrs}
   category-ai-chat-!cn:    {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-ai-!cn.mrs}
-  speedtest:               {<<: *ClassicalYaml, url: https://gh.catmak.name/https://gist.githubusercontent.com/xiaodo168/32ab6e503b8556c64ceefe4c00cf30cc/raw/speedtest.yaml}
   spotify:                 {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/spotify.mrs}
   disney:                  {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/disney.mrs}
   hbo:                     {<<: *DomainMrs, url: https://gh.catmak.name/https://github.com/666OS/YYDS/raw/main/mihomo/rules/hbo.mrs}

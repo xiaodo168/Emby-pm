@@ -103,75 +103,76 @@ proxies:
 # 总策略组 ℳ谨兮优化
 
 proxy-groups:
+proxy-groups:
  # 国内
-  - {name: 默认代理, <<: *SelectFB, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Static.png}
-  - {name: 国内网站, type: select, proxies: [直连, 默认代理,香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/China.png}
-  - {name: 优选IP, type: select, proxies: [直连, 默认代理], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/cf.png}
-  - {name: Emby, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/EMBY_3.png}
-  - {name: 抖快书定位, type: select, proxies: [直连, 香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Joplin_A.png}
+  - {name: 默认代理, <<: *SelectFB, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Static.png}
+  - {name: 国内网站, type: select, proxies: [直连, 默认代理,香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/China.png}
+  - {name: 优选IP, type: select, proxies: [直连, 默认代理], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/cf.png}
+  - {name: Emby, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/EMBY_3.png}
+  - {name: 抖快书定位, type: select, proxies: [直连, 香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Joplin_A.png}
  # 国外
-  - {name: 国外网站, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Global.png}
-  - {name: Telegram, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Telegrampremium.png}
-  - {name: Twitter, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/twitter(1).png}
-  - {name: Github, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/GitHub.png}
-  - {name: 微软服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Microsoft.png}
-  - {name: 谷歌服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Google_Search.png}
-  - {name: 苹果服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Apple.png}
-  - {name: 脸书服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Facebook.png}
+  - {name: 国外网站, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Global.png}
+  - {name: Telegram, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Telegrampremium.png}
+  - {name: Twitter, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/twitter(1).png}
+  - {name: Github, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/GitHub.png}
+  - {name: 微软服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Microsoft.png}
+  - {name: 谷歌服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Google_Search.png}
+  - {name: 苹果服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Apple.png}
+  - {name: 脸书服务, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Facebook.png}
  # 不常用APP
-  - {name: ChatGPT, <<: *SelectSG, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/ChatGPT.png}  
-  - {name: AI平台, <<: *SelectSG, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/ai.png}
-  - {name: YouTube, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/youtube.png}
-  - {name: NetFlix, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Netflix.png}
-  - {name: TikTok, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/TikTok.png}
-  - {name: Disney, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Disney.png}
-  - {name: Spotify, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Spotify.png}
-  - {name: HBO, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/HBO.png}
-  - {name: 国际新闻, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Apple_News.png}
-  - {name: 社交平台, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/PBS.png}
-  - {name: 货币平台, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Bitcloud.png}
-  - {name: 游戏平台, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/GAME.png}
-  - {name: 网速测试, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Speedtest.png}
+  - {name: ChatGPT, <<: *SelectSG, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/ChatGPT.png}  
+  - {name: AI平台, <<: *SelectSG, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/ai.png}
+  - {name: YouTube, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/youtube.png}
+  - {name: NetFlix, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Netflix.png}
+  - {name: TikTok, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/TikTok.png}
+  - {name: Disney, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Disney.png}
+  - {name: Spotify, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Spotify.png}
+  - {name: HBO, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/HBO.png}
+  - {name: 国际新闻, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Apple_News.png}
+  - {name: 社交平台, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/PBS.png}
+  - {name: 货币平台, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Bitcloud.png}
+  - {name: 游戏平台, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/GAME.png}
+  - {name: 网速测试, <<: *SelectProxy, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Speedtest.png}
  # 地区策略
-  - {name: 香港策略, type: select, proxies: [香港自动, 香港均衡-散列, 香港均衡-轮询], include-all: true, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Hong_Kong.png}
-  - {name: 台湾策略, type: select, proxies: [台湾自动, 台湾均衡-散列, 台湾均衡-轮询], include-all: true, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/TW.png}
-  - {name: 新加坡策略, type: select, proxies: [新加坡自动, 新加坡均衡-散列, 新加坡均衡-轮询], include-all: true, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Singapore.png}
-  - {name: 日本策略, type: select, proxies: [日本自动, 日本均衡-散列, 日本均衡-轮询], include-all: true, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Japan.png}
-  - {name: 韩国策略, type: select, proxies: [韩国自动, 韩国均衡-散列, 韩国均衡-轮询], include-all: true, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Korea.png}
-  - {name: 美国策略, type: select, proxies: [美国自动, 美国均衡-散列, 美国均衡-轮询], include-all: true, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/United_States.png}
-  - {name: 欧盟策略, type: select, proxies: [欧盟自动, 欧盟均衡-散列, 欧盟均衡-轮询], include-all: true, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/European_Union.png}
+  - {name: 香港策略, type: select, proxies: [香港自动, 香港均衡-散列, 香港均衡-轮询], include-all: true, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Hong_Kong.png}
+  - {name: 台湾策略, type: select, proxies: [台湾自动, 台湾均衡-散列, 台湾均衡-轮询], include-all: true, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/TW.png}
+  - {name: 新加坡策略, type: select, proxies: [新加坡自动, 新加坡均衡-散列, 新加坡均衡-轮询], include-all: true, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Singapore.png}
+  - {name: 日本策略, type: select, proxies: [日本自动, 日本均衡-散列, 日本均衡-轮询], include-all: true, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Japan.png}
+  - {name: 韩国策略, type: select, proxies: [韩国自动, 韩国均衡-散列, 韩国均衡-轮询], include-all: true, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Korea.png}
+  - {name: 美国策略, type: select, proxies: [美国自动, 美国均衡-散列, 美国均衡-轮询], include-all: true, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/United_States.png}
+  - {name: 欧盟策略, type: select, proxies: [欧盟自动, 欧盟均衡-散列, 欧盟均衡-轮询], include-all: true, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/European_Union.png}
  # 其他策略
-  - {name: 链式代理, type: relay, proxies: [中转机, 落地机], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/TIDAL_1.png}
-  - {name: 中转机, type: select, proxies: [香港策略, 台湾策略, 日本策略, 新加坡策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Rocket.png}
-  - {name: 落地机, type: select, include-all: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Domestic.png}
-  - {name: 故障转移, <<: *FallBack, proxies: [香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选, 直连], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/ULB.png}
-  - {name: 漏网之鱼, type: select, proxies: [默认代理, 直连], icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Final.png}
-  - {name: 全球手动, type: select, include-all: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Clubhouse.png}
-  - {name: 冷门自选, type: select, include-all: true, filter: *FilterOther, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/XD.png}
+  - {name: 链式代理, type: relay, proxies: [中转机, 落地机], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/TIDAL_1.png}
+  - {name: 中转机, type: select, proxies: [香港策略, 台湾策略, 日本策略, 新加坡策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Rocket.png}
+  - {name: 落地机, type: select, include-all: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Domestic.png}
+  - {name: 故障转移, <<: *FallBack, proxies: [香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选, 直连], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/ULB.png}
+  - {name: 漏网之鱼, type: select, proxies: [默认代理, 直连], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Final.png}
+  - {name: 全球手动, type: select, include-all: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Clubhouse.png}
+  - {name: 冷门自选, type: select, include-all: true, filter: *FilterOther, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/XD.png}
  # 自动测速
-  - {name: 香港自动, <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png}
-  - {name: 台湾自动, <<: *UrlTest, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png}
-  - {name: 新加坡自动, <<: *UrlTest, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png}
-  - {name: 日本自动, <<: *UrlTest, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png}
-  - {name: 韩国自动, <<: *UrlTest, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png}
-  - {name: 美国自动, <<: *UrlTest, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png}
-  - {name: 欧盟自动, <<: *UrlTest, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Auto.png} 
+  - {name: 香港自动, <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png}
+  - {name: 台湾自动, <<: *UrlTest, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png}
+  - {name: 新加坡自动, <<: *UrlTest, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png}
+  - {name: 日本自动, <<: *UrlTest, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png}
+  - {name: 韩国自动, <<: *UrlTest, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png}
+  - {name: 美国自动, <<: *UrlTest, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png}
+  - {name: 欧盟自动, <<: *UrlTest, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Auto.png} 
  # 负载均衡-散列
-  - {name: 香港均衡-散列, <<: *LoadBalanceCH, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
-  - {name: 台湾均衡-散列, <<: *LoadBalanceCH, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
-  - {name: 新加坡均衡-散列, <<: *LoadBalanceCH, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
-  - {name: 日本均衡-散列, <<: *LoadBalanceCH, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
-  - {name: 韩国均衡-散列, <<: *LoadBalanceCH, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
-  - {name: 美国均衡-散列, <<: *LoadBalanceCH, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
-  - {name: 欧盟均衡-散列, <<: *LoadBalanceCH, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin_1.png}
+  - {name: 香港均衡-散列, <<: *LoadBalanceCH, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
+  - {name: 台湾均衡-散列, <<: *LoadBalanceCH, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
+  - {name: 新加坡均衡-散列, <<: *LoadBalanceCH, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
+  - {name: 日本均衡-散列, <<: *LoadBalanceCH, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
+  - {name: 韩国均衡-散列, <<: *LoadBalanceCH, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
+  - {name: 美国均衡-散列, <<: *LoadBalanceCH, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
+  - {name: 欧盟均衡-散列, <<: *LoadBalanceCH, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin_1.png}
  # 负载均衡-轮询
-  - {name: 香港均衡-轮询, <<: *LoadBalanceCR, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
-  - {name: 台湾均衡-轮询, <<: *LoadBalanceCR, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
-  - {name: 新加坡均衡-轮询, <<: *LoadBalanceCR, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
-  - {name: 日本均衡-轮询, <<: *LoadBalanceCR, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
-  - {name: 韩国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
-  - {name: 美国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
-  - {name: 欧盟均衡-轮询, <<: *LoadBalanceCR, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Pictures/main/IconSet/Mihomo/Round_Robin.png}
+  - {name: 香港均衡-轮询, <<: *LoadBalanceCR, filter: *FilterHK, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
+  - {name: 台湾均衡-轮询, <<: *LoadBalanceCR, filter: *FilterTW, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
+  - {name: 新加坡均衡-轮询, <<: *LoadBalanceCR, filter: *FilterSG, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
+  - {name: 日本均衡-轮询, <<: *LoadBalanceCR, filter: *FilterJP, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
+  - {name: 韩国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterKR, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
+  - {name: 美国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterUS, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
+  - {name: 欧盟均衡-轮询, <<: *LoadBalanceCR, filter: *FilterEU, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Round_Robin.png}
 
 # ℳ谨兮规则合集
 rule-providers: 

@@ -101,7 +101,6 @@ proxies:
   - {name: 直连, type: direct, udp: true}
 
 # 总策略组 ℳ谨兮优化
-
 proxy-groups:
 proxy-groups:
  # 国内

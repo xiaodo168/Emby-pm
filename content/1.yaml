@@ -102,7 +102,6 @@ proxies:
 
 # 总策略组 ℳ谨兮优化
 proxy-groups:
-proxy-groups:
  # 国内
   - {name: 默认代理, <<: *SelectFB, icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/Static.png}
   - {name: 国内网站, type: select, proxies: [直连, 默认代理,香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选], icon: https://raw.githubusercontent.com/xiaodo168/Rule/main/IconSet/China.png}
